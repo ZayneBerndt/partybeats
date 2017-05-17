@@ -12,9 +12,9 @@
         templateUrl: '/templates/landing.html'
       })
     
-      .state('collection', {
-        url: '/collection',
-        templateUrl: '/templates/collection.html'
+      .state('signin', {
+        url: '/signin',
+        templateUrl: '/templates/signin.html'
       });
   }
 
