@@ -158,8 +158,8 @@
     };
       
       
-<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
-<script>
+
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDV7tCzqsqAxlzt1HOauF9Bxe1_G1CdKyQ",
@@ -170,7 +170,6 @@
     messagingSenderId: "976147237449"
   };
   firebase.initializeApp(config);
-</script>
          
    
   }
