@@ -1,16 +1,13 @@
 (function() {
-  function SigninCtrl($state) {
-      
-      
-      /**
-     * Handles the sign in button press.
-     */
+  function SigninCtrl() {
+
+
+  
     function toggleSignIn() {
       if (firebase.auth().currentUser) {
-        // [START signout]
-        firebase.auth().signOut();
-        // [END signout]
-      } else {
+      
+       firebase.auth().signOut();
+     } else {
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
         if (email.length < 4) {
@@ -108,7 +105,11 @@
       });
       // [END sendpasswordemail];
     }
-    
+    /**
+     * initApp handles setting up UI event listeners and registering Firebase auth listeners:
+     *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
+     *    out, and that is where we update the UI.
+     */
     function initApp() {
       // Listening for auth state changes.
       // [START authstatelistener]
@@ -132,11 +133,10 @@
           if (!emailVerified) {
             document.getElementById('quickstart-verify-email').disabled = false;
           }
-            $state.go('user');
-           
           // [END_EXCLUDE]
-        } else {
-          // User is signed out.
+          } else {
+              
+              // User is signed out.
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
           document.getElementById('quickstart-sign-in').textContent = 'Sign in';
@@ -156,6 +156,9 @@
     window.onload = function() {
       initApp();
     };
+     };
+  
+
       
       
 
@@ -170,6 +173,10 @@
     messagingSenderId: "976147237449"
   };
   firebase.initializeApp(config);
+<<<<<<< HEAD
+=======
+
+>>>>>>> FirebaseAuth
          
    
   }
