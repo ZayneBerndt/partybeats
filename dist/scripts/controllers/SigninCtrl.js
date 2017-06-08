@@ -67,10 +67,10 @@
     firebase.initializeApp(config);
         
 
-<<<<<<< HEAD
-  }
-=======
->>>>>>> FirebaseAuth
+
+  
+ 
+
 
     
 angular
