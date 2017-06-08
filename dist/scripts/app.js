@@ -23,6 +23,12 @@
         url: '/user',
         templateUrl: '/templates/user.html',
         controller: 'UserCtrl as user'
+      })
+    
+    .state('dj', {
+        url: '/dj',
+        templateUrl: '/templates/dj.html',
+        controller: 'DjCtrl as dj'
       });
       
       
