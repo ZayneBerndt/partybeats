@@ -173,12 +173,7 @@
     messagingSenderId: "976147237449"
   };
   firebase.initializeApp(config);
-<<<<<<< HEAD
-=======
 
->>>>>>> FirebaseAuth
-         
-   
   }
 
   angular
