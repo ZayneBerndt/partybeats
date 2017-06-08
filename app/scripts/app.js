@@ -28,8 +28,10 @@
       
 
   }
+    
+
 
   angular
-    .module('partybeats', ['ui.router'])
+    .module('partybeats', [ 'firebase', 'ui.router'])
     .config(config);
-})();
+})()
