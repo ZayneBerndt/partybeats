@@ -6,6 +6,7 @@
         requireBase: false
       });
 
+    
     $stateProvider
       .state('landing', {
         url: '/',
@@ -18,17 +19,11 @@
         templateUrl: '/templates/signin.html',
         controller: 'SigninCtrl as signin'
       })
-      
-      .state('user', {
-        url: '/user',
-        templateUrl: '/templates/user.html',
-        controller: 'UserCtrl as user'
-      })
     
-    .state('dj', {
-        url: '/dj',
-        templateUrl: '/templates/dj.html',
-        controller: 'DjCtrl as dj'
+      .state('djSignup', {
+        url: '/dj-signup',
+        templateUrl: '/templates/djsignup.html',
+        controller: 'DjSignupCtrl as djsignup'
       });
       
       
