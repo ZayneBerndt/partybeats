@@ -20,6 +20,12 @@
         controller: 'SigninCtrl as signin'
       })
     
+     .state('artists', {
+        url: '/artists',
+        templateUrl: '/templates/artists.html',
+        controller: 'ArtistsCtrl as artists'
+      })
+    
       .state('djSignup', {
         url: '/dj-signup',
         templateUrl: '/templates/djsignup.html',
