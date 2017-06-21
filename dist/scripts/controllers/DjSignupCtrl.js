@@ -12,7 +12,16 @@ function writeDjData(bandId, name, slogan, imageUrl) {
     profile_picture : imageUrl
   });
 }
+
+btnLogout.addEventListener('click', e => {
+    firebase.auth().signOut().then(function() {
+        console.log('Signed Out');
+         window.location = "/signin"
         
+    }, function(error) {
+    console.error('Sign Out Error', error);
+    })
+})
 
 
 // Automatic Slideshow - change image every 4 seconds

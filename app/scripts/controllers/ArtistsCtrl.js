@@ -18,6 +18,13 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+    
+//onclick get saved DJ user profile for view from Database. 
+//    function onClick(element){
+//        document.getElementById("UserImage").src = element.src;
+//        open location DJ page } 
+
+       
 
 angular
     .module('partybeats')

@@ -1,35 +1,39 @@
 (function() {
     function SigninCtrl($scope, $firebaseAuth) {
     
-   //Get Elements 
-    const txtEmail = document.getElementById('txtEmail');
-    const txtPassword = document.getElementById('txtPassword');
-    const btnLogin = document.getElementById('btnLogin');
-    const btnSignUp = document.getElementById('btnSignUp');
-    const btnLogout = document.getElementById('btnLogout');
-
-   //Add login event
-    btnLogin.addEventListener('click', e => {
-   
-   //Get email and pass
-    const email = txtEmail.value;
-    const pass = txtPassword.value;
-    window.location = '/dj-signup';
-    
-    //Sign in 
-    const promise = firebase.auth().signInWithEmailAndPassword(email, pass);
-        
+        //Get Elements 
+const txtEmail = document.getElementById('txtEmail');
+const txtPassword = document.getElementById('txtPassword');
+const btnLogin = document.getElementById('btnLogin');
+const btnSignUp = document.getElementById('btnSignUp');
+const btnLogout = document.getElementById('btnLogout');
   
+        //Add login event
+btnLogin.addEventListener('click', e => {
+        //Get email and pass
+const email = txtEmail.value;
+const pass = txtPassword.value;
+        //Sign in 
+firebase.auth().signInWithEmailAndPassword(email, pass);
+        
+var user = firebase.auth().currentUser;
+    if (user != null) {
+    window.location = "/dj-signup"
+    }
       
 //  promise.catch(e => console.log(e.message));
     
     });
+        
+    
         
     //Sign out 
         
    btnLogout.addEventListener('click', e => {
     firebase.auth().signOut().then(function() {
         console.log('Signed Out');
+         window.location = "/signin"
+        
     }, function(error) {
     console.error('Sign Out Error', error);
     })
@@ -43,6 +47,7 @@
     const email = txtEmail.value;
     const pass = txtPassword.value;
     const promise = firebase.auth().createUserWithEmailAndPassword(email, pass);
+    
     });
     
    //Add a realtime listener
