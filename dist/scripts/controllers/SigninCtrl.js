@@ -20,15 +20,10 @@ var user = firebase.auth().currentUser;
     if (user != null) {
     window.location = "/dj-signup"
     }
-      
-//  promise.catch(e => console.log(e.message));
-    
-    });
+        });
         
     
-        
-    //Sign out 
-        
+ //Sign out      
    btnLogout.addEventListener('click', e => {
     firebase.auth().signOut().then(function() {
         console.log('Signed Out');
@@ -38,6 +33,25 @@ var user = firebase.auth().currentUser;
     console.error('Sign Out Error', error);
     })
 })
+   
+   
+   //Validate User 
+   function ValidateUser() {
+   var pword= new RegExp (/^[a-zA-Z0-9]{4,100}$/)
+   if (pword.test(password)) { 
+      return true
+   }
+   else {
+      alert("Incorrect Password or Username")
+   }
+   var email= new RegExp (/^[A-Za-z0-9_.]{2,100}+@[A-Za-z0-9.-]{2,100}+\.[A-Za-z]{2,100}$/)
+   if (email.test(EmailAddress)) {
+      return true
+   }
+   else {
+      alert("Incorrect Password or Username")
+   }
+}
 
   
     
