@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-image: url(../assets/images/dj-set-da-tel-aviv-2.jpg);
+/*    background-image: url(../assets/images/dj-set-da-tel-aviv-2.jpg);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -22,7 +22,7 @@ body {
 
 .navbar {
     position: relative;
-    padding: 0.5rem;
+    padding: 1.5rem;
     /* #1 */
     background-color: rgba(101,18,95,0.5);
     /* #2 */
@@ -30,8 +30,10 @@ body {
 }
 
 .navbar .logo {
+    background-image:  url(../assets/images/bloc-logo-white.png);
     position: relative;
-    left: 2rem;
+    height:50px;
+    left: -150px;
     cursor: pointer;
 }
 

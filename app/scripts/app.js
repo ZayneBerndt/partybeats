@@ -26,11 +26,11 @@
         controller: 'ArtistsCtrl as artists'
       })
     
-    .state('user', {
-        url: '/user',
-        templateUrl: '/templates/user.html',
-        controller: 'ArtistsCtrl as artists'
-      })
+     .state ('test'),  {
+        url: '/test',
+        templateUrl: '/templates/test.html',
+        controller: 'TestCtrl as test'
+    }
     
       .state('djSignup', {
         url: '/dj-signup',
@@ -45,6 +45,6 @@
 
 
   angular
-    .module('partybeats', [ 'firebase', 'ui.router'])
+    .module('partybeats', [ 'ui.router'])
     .config(config);
 })()

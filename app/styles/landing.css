@@ -1,4 +1,18 @@
- body.landing {
+body {
+/*    background-image: url(../assets/images/dj-set-da-tel-aviv-2.jpg);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Open Sans';
+    color: white;
+    min-height: 100%;
+    padding-bottom: 150px;
+} 
+
+
+
+body.landing {
     background-color: rgb(58,23,63);
 }
 
@@ -55,3 +69,5 @@
     color: rgb(233,50,117);
     font-size: 5rem;
 }
+
+

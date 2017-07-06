@@ -1,5 +1,5 @@
 (function() {
-    function SigninCtrl($scope, $firebaseAuth) {
+    function SigninCtrl($scope) {
     
         //Get Elements 
 const txtEmail = document.getElementById('txtEmail');
@@ -94,7 +94,7 @@ var user = firebase.auth().currentUser;
     
 angular
     .module('partybeats')
-    .controller('SigninCtrl', ['$firebaseAuth', SigninCtrl]);
+    .controller('SigninCtrl', [ SigninCtrl]);
 
 
 
