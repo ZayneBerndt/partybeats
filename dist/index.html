@@ -16,6 +16,8 @@
 <link rel="stylesheet" type="text/css" href="/styles/djsignup.css">
 <link rel="stylesheet" type="text/css" href="/styles/artists.css">
 <link rel="stylesheet" type="text/css" href="/styles/test.css">
+<link rel="stylesheet" type="text/css" href="/styles/messenger.css">
+    
 </head>
 <body>
 
@@ -24,12 +26,13 @@
   <ui-view></ui-view>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-     <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
 
-      <!-- AngularFire -->
-<script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+<!-- Angular Firebase -->
+<script src="/__/firebase/4.0.0/firebase-app.js"></script>
+<!-- Angular Firebase Auth -->    
+<script src="/__/firebase/4.0.0/firebase-auth.js"></script>
+<script src="/__/firebase/init.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
@@ -41,7 +44,11 @@
 <script src="/scripts/controllers/DjSignupCtrl.js"></script>
 <script src="/scripts/controllers/ArtistsCtrl.js"></script>
 <script src="/scripts/controllers/TestCtrl.js"></script>
+<script src="/scripts/controllers/MessengerCtrl.js"></script>
+<script src="/scripts/services/Room.js"></script>
        
+
 </body>
 </html>
+
 

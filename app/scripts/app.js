@@ -26,11 +26,18 @@
         controller: 'ArtistsCtrl as artists'
       })
     
-     .state ('test'),  {
+    .state('test', {
         url: '/test',
         templateUrl: '/templates/test.html',
         controller: 'TestCtrl as test'
-    }
+      })
+     
+    .state('messenger', {
+        url: '/messenger',
+        templateUrl: '/templates/messenger.html',
+        controller: 'MessengerCtrl as messenger'
+      })
+    
     
       .state('djSignup', {
         url: '/dj-signup',
