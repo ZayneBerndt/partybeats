@@ -31,6 +31,15 @@
         <button class="btn-new" type="button" >Create room</button>
     </div>
             <button type="button" class="new-room" >New Room</button>
-
 </section>
+
+<div>
+        <table class="table">
+            <tr ng-repeat="room in messenger.rooms">
+                <td>
+                    <a {{ room.name }}</a>
+                </td>
+            </tr>
+        </table>
+    </div>
 

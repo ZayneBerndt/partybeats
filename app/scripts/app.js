@@ -38,6 +38,8 @@
         controller: 'MessengerCtrl as messenger'
       })
     
+
+    
     
       .state('djSignup', {
         url: '/dj-signup',

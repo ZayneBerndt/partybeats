@@ -38,6 +38,12 @@
         controller: 'MessengerCtrl as messenger'
       })
     
+     .state('room', {
+        url: '/messenger',
+        templateUrl: '/templates/messenger.html',
+        controller: 'RoomCtrl as room'
+      })
+    
     
       .state('djSignup', {
         url: '/dj-signup',
